@@ -13,3 +13,8 @@ header{
 .trybewarts-login {
     display: flex;
 }
+
+main, main form{
+    display: flex;
+    width: 675px;
+}
