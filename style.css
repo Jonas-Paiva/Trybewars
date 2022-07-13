@@ -1,8 +1,8 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 header{
     display: flex;
@@ -14,10 +14,19 @@ header{
     display: flex;
 }
 
+.container{
+    display: flex;
+
+}
+
 main, main form{
     display: flex;
     width: 675px;
 }
 main form{
     flex-direction: column;
+}
+#trybewarts-forms-logo{
+    width: 500px;
+    height: 500px;
 }
