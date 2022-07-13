@@ -4,29 +4,35 @@
     box-sizing: border-box;
 } */
 
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(50, 167, 145);
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-login {
-    display: flex;
+  display: flex;
 }
 
-.container{
-    display: flex;
-
+.container {
+  display: flex;
 }
 
-main, main form{
-    display: flex;
-    width: 675px;
+main,
+main form {
+  display: flex;
+  width: 675px;
 }
-main form{
-    flex-direction: column;
+
+main form {
+  flex-direction: column;
 }
-#trybewarts-forms-logo{
-    width: 500px;
-    height: 500px;
+
+#trybewarts-forms-logo {
+  width: 500px;
+  height: 500px;
+}
+
+.linha2 {
+  display: flex;
 }
