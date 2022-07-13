@@ -18,8 +18,7 @@ header {
   display: flex;
 }
 
-main,
-main form {
+main , main form {
   display: flex;
   width: 675px;
 }
