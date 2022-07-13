@@ -4,14 +4,44 @@ html {
   box-sizing: border-box;
 }
 
-header {
+body {
+  margin: auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: rgb(50, 167, 145);
+}
+
+header h1 {
+  color: aliceblue;
+}
+
+header img {
+  height: 90%;
 }
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  margin-right: 5px;
+  height: 35%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#enviar {
+  height: 65%;
 }
 
 .container {
@@ -35,4 +65,10 @@ main form {
 .linha2 {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
