@@ -23,14 +23,12 @@ function disabledBtn() {
 }
 
 function contador() {
-  const x = (textareaBtn.value);
+  const x = textareaBtn.value;
   const tamanho = x.length;
-  tamanhoC = 500-tamanho;
+  const tamanhoC = 500 - tamanho;
   counterBtn.innerText = tamanhoC;
 }
 
-
 checkbox.addEventListener('click', disabledBtn);
 enviarBtn.addEventListener('click', enviar);
-textareaBtn.addEventListener('keyup',contador);
-
+textareaBtn.addEventListener('keyup', contador);
