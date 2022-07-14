@@ -74,8 +74,9 @@ main , #evaluation-form {
 }
 
 /* titulos */
-h2 , #label-title , #label-family {
-  margin-bottom: 20px;
+h2 , #label-family , .label-title , #house-title {
+  font-weight: 600;
+  font-size: 1em;
 }
 
 .name-lastname , .email-house {
@@ -103,6 +104,7 @@ h2 , #label-title , #label-family {
 
 /* Grupo do centro */
 .family-likeLearn {
+  height: 150px;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -111,10 +113,14 @@ h2 , #label-title , #label-family {
 }
 
 .family , .like-learn {
-  width: 47%;
+  margin-bottom: 10px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
 }
 
-.radio , .text-area , #textarea {
+/* avaliação de 0 a 10 */
+.radio{
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -122,14 +128,21 @@ h2 , #label-title , #label-family {
   align-items: center;
 }
 
-.itens-family , .radio-linear {
+.radio-linear {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
 }
 
-#agreement {
+/* text area */
+.areaText {
+}
+
+#label-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -138,7 +151,6 @@ h2 , #label-title , #label-family {
   width: 500px;
   height: 500px;
 }
-
 
 footer {
   margin-top: 50px;
