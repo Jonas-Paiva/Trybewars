@@ -13,6 +13,7 @@ body {
 }
 
 header {
+  box-shadow: 1px 1px 5px black;
   height: 50px;
   display: flex;
   align-items: center;
@@ -41,30 +42,36 @@ header img {
 }
 
 #enviar {
-  height: 65%;
+  height: 27px;
 }
 
 .container {
+  margin: auto;
   display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
 }
 
-main , main form {
+.linha2 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+main , #evaluation-form {
   display: flex;
   width: 675px;
 }
 
-main form {
+#evaluation-form {
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
 #trybewarts-forms-logo {
   width: 500px;
   height: 500px;
-}
-
-.linha2 {
-  display: flex;
-  flex-direction: column;
 }
 
 footer {

@@ -11,6 +11,8 @@ function enviar() {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
+    email.value = '';
+    password.value = '';
   }
 }
 
