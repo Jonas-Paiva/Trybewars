@@ -38,7 +38,9 @@
 
           <div class="email-house">
             <input type="text" id="input-email" placeholder="Email" />
+
             <label for="house">Escolha a sua Casa:</label>
+
             <select name="house" id="house">
               <option value="Gitnória" id="gitnoria-house">Gitnória</option>
               <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -49,10 +51,10 @@
 
           <span></span>
 
-          <div class="family">
-            <label id="label-family">Qual sua família?</label>
+          <div class="family-likeLearn">
 
-            <section class="itens-family">
+            <div class="family">
+              <label id="label-family">Qual sua família?</label>
               <div>
                 <input type="radio" name="family" id="Front" value="Frontend" />
                 <label for="Frontend">Frontend</label>
@@ -77,97 +79,93 @@
                 />
                 <label for="FullStack">FullStack</label>
               </div>
-            </section>
-          </div>
+            </div>
 
-          <span></span>
+            <div class="like-learn">
+              <label class="label-title" id="label-content"
+                >Qual conteúdo você está com mais vontade de aprender?</label><br>
 
-          <div class="like-learn">
-
-            <label class="label-title" id="label-content"
-              >Qual conteúdo você está com mais vontade de aprender?</label>
-
-            <div class="itens-like-learn">
               <input class="subject" type="checkbox" name="HoFs" value="HoFs" />
-              <label for="HoFs">HoFs</label>
+              <label for="HoFs">HoFs</label><br>
 
               <input class="subject" type="checkbox" value="Jest" />
-              <label for="Jest">Jest</label>
+              <label for="Jest">Jest</label><br>
 
               <input class="subject" type="checkbox" value="Promises" />
-              <label for="Promises">Promises</label>
+              <label for="Promises">Promises</label><br>
 
               <input class="subject" type="checkbox" value="React" />
-              <label for="React">React</label>
+              <label for="React">React</label><br>
 
               <input class="subject" type="checkbox" value="SQL" />
-              <label for="SQL">SQL</label>
+              <label for="SQL">SQL</label><br>
 
               <input class="subject" type="checkbox" value="Python" />
-              <label for="Python">Python</label>
+              <label for="Python">Python</label><br>
             </div>
           </div>
 
           <span></span>
 
           <div class="radio">
-            <label class="label-title" id="label-rate">Como você avalia a Trybewarts?</label>
+            <label class="label-title" id="label-rate"
+              >Como você avalia a Trybewarts?</label
+            >
 
             <div class="radio-linear">
               <div>
-                <input type="radio" name="rate" value="0"/>
+                <input type="radio" name="rate" value="0" />
                 <label for="">0</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="1"/>
+                <input type="radio" name="rate" value="1" />
                 <label for="">1</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="2"/>
+                <input type="radio" name="rate" value="2" />
                 <label for="">0</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="3"/>
+                <input type="radio" name="rate" value="3" />
                 <label for="">3</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="4"/>
+                <input type="radio" name="rate" value="4" />
                 <label for="">4</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="5"/>
+                <input type="radio" name="rate" value="5" />
                 <label for="">5</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="6"/>
+                <input type="radio" name="rate" value="6" />
                 <label for="">6</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="7"/>
+                <input type="radio" name="rate" value="7" />
                 <label for="">7</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="8"/>
+                <input type="radio" name="rate" value="8" />
                 <label for="">8</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="9"/>
+                <input type="radio" name="rate" value="9" />
                 <label for="">9</label>
               </div>
               <div>
-                <input type="radio" name="rate" value="10"/>
+                <input type="radio" name="rate" value="10" />
                 <label for="">10</label>
               </div>
-           
             </div>
-
           </div>
 
           <span></span>
 
           <div class="text-area">
-            <label class="textarea label-title">Deixe seu comentário:</label><br>
-            <textarea name="" id="textarea"  maxlength="500"></textarea>
+            <label class="textarea label-title">Deixe seu comentário:</label
+            ><br />
+            <textarea name="" id="textarea" maxlength="500"></textarea>
             <p class="contador" id="counter">500</p>
           </div>
 
@@ -175,7 +173,8 @@
 
           <div>
             <label id="label-infos"
-              >Você concorda com o uso das informações acima?</label>
+              >Você concorda com o uso das informações acima?</label
+            >
             <input name="checkbox" type="checkbox" id="agreement" />
           </div>
 

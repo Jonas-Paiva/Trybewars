@@ -1,10 +1,6 @@
-* {
-  margin: 0;
+body {
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   margin: auto;
   width: 100%;
   display: flex;
@@ -12,6 +8,20 @@ body {
   justify-content: center;
 }
 
+/* divisórias */
+span {
+  margin: 50px 0px;
+  width: 80%;
+  border: 1px solid rgba(173, 173, 173, 0.432);
+}
+
+/* buttons */
+#enviar , #submit-btn {
+  height: 27px;
+  width: 70px;
+}
+
+/* barra fixa */
 header {
   position: sticky;
   top: 0;
@@ -45,11 +55,7 @@ header img {
   border-radius: 5px;
 }
 
-#enviar , #submit-btn {
-  height: 27px;
-  width: 70px;
-}
-
+/* Forms */
 .container {
   margin: auto;
   display: flex;
@@ -67,13 +73,9 @@ main , #evaluation-form {
   flex-direction: column;
 }
 
-#trybewarts-forms-logo {
-  width: 500px;
-  height: 500px;
-}
-
-h2 {
-  margin-bottom: 40px;
+/* titulos */
+h2 , #label-title , #label-family {
+  margin-bottom: 20px;
 }
 
 .name-lastname , .email-house {
@@ -84,31 +86,35 @@ h2 {
   margin-bottom: 10px;
 }
 
-.label-title , #label-family {
-  font-size: 1.2em;
-  font-weight: 600;
+.name-lastname input , .email-house input {
+  font-size: 1em;
+  width: 47%;
+  padding: 5px;
 }
 
+/* Escolha a sua casa */
 #house {
+  text-align: center;
   padding: 5px;
   font-size: 1em;
   margin-left: 0%;
   width: 20%;
 }
 
-.name-lastname input , .email-house input {
-  font-size: 1em;
-  width: 48%;
-  padding: 5px;
-}
-
-span {
-  margin: 50px 0px;
+/* Grupo do centro */
+.family-likeLearn {
   width: 80%;
-  border: 1px solid rgba(173, 173, 173, 0.432);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
-.family {
+.family , .like-learn {
+  width: 47%;
+}
+
+.radio , .text-area , #textarea {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -116,61 +122,26 @@ span {
   align-items: center;
 }
 
-.itens-family {
+.itens-family , .radio-linear {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
 }
 
-.like-learn {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#agreement {
+  margin-bottom: 20px;
 }
 
-.itens-like-learn {
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-around;
+/* Brasão da escola */
+#trybewarts-forms-logo {
+  width: 500px;
+  height: 500px;
 }
 
-.radio {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-}
-
-.radio-linear {
-  margin-top: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.text-area {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-
-}
-
-#textarea {
-  width: 80%;
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-}
 
 footer {
+  margin-top: 50px;
   background-color: rgb(50, 167, 145);
   color: aliceblue;
   box-shadow: 1px -1px 3px black;
