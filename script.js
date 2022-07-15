@@ -33,68 +33,14 @@ function contador() {
   counterBtn.innerText = tamanhoC;
 }
 
-<<<<<<< HEAD
-=======
 // function enviaData() {
 //   while (mainT.firstChild) {
 //     mainT.removeChild(mainT.firstChild);
-//   .}
+//   }
 // }
 
-function pegarInfo(e) {
-  e.preventDefault();
-  // pegar inputs e tags form
-  const name = document.getElementById("input-name");
-  const lastname = document.getElementById("input-lastname");
-  const email = document.getElementById("input-email");
-  const house = document.getElementById("house");
-  const radio = document.querySelector('input[name = "family"]:checked');
-  const avaliacao = document.querySelector('input[name = "rate"]:checked');
-  const textareaF = document.getElementById("textarea");
-
-  let array = [];
-  let checkboxes = document.querySelectorAll(
-    'input[class = "subject"]:checked'
-  );
-
-  for (var i = 0; i < checkboxes.length; i++) {
-    array.push(checkboxes[i].value);
-  }
-  const objeto = [
-    {
-      question: "Nome:",
-      answer: `${name.value} ${lastname.value}`,
-    },
-    {
-      question: "Email:",
-      answer: `${email.value}`,
-    },
-    {
-      question: "Casa:",
-      answer: `${house.value}`,
-    },
-    {
-      question: "Família:",
-      answer: `${radio.value}`,
-    },
-    {
-      question: "Matérias:",
-      answer: `${array}`,
-    },
-    {
-      question: "Avaliação:",
-      answer: `${avaliacao.value}`,
-    },
-    {
-      question: "Observações:",
-      answer: `${textareaF.value}`,
-    },
-  ];
-  renderFormData(objeto);
-}
-
 function createListElement(question, answer) {
-  const liElement = document.createElement("li");
+  const liElement = document.createElement('li');
   liElement.innerHTML = `
     <strong>${question}</strong>
     <span>${answer}</span>
@@ -102,7 +48,6 @@ function createListElement(question, answer) {
   return liElement;
 }
 
->>>>>>> old-state
 function renderFormData(formData) {
   formant.style.display = 'none';
 
@@ -115,7 +60,6 @@ function renderFormData(formData) {
 
 function pegarInfo(e) {
   e.preventDefault();
-  // pegar inputs e tags form
   const name = document.getElementById('input-name');
   const lastname = document.getElementById('input-lastname');
   const email = document.getElementById('input-email');
@@ -123,49 +67,17 @@ function pegarInfo(e) {
   const radio = document.querySelector('input[name = "family"]:checked');
   const avaliacao = document.querySelector('input[name = "rate"]:checked');
   const textareaF = document.getElementById('textarea');
-
   const array = [];
-  const checkboxes = document.querySelectorAll(
-    'input[class = "subject"]:checked',
-  );
-
-  for (let i = 0; i < checkboxes.length; i = +1) {
-    array.push(checkboxes[i].value);
-  }
-  const objeto = [
-    {
-      question: 'Nome:',
-      answer: `${name.value} ${lastname.value}`,
-    },
-    {
-      question: 'Email:',
-      answer: `${email.value}`,
-    },
-    {
-      question: 'Casa:',
-      answer: `${house.value}`,
-    },
-    {
-      question: 'Família:',
-      answer: `${radio.value}`,
-    },
-    {
-      question: 'Matérias:',
-      answer: `${array}`,
-    },
-    {
-      question: 'Avaliação:',
-      answer: `${avaliacao.value}`,
-    },
-    {
-      question: 'Observações:',
-      answer: `${textareaF.value}`,
-    },
-  ];
-  renderFormData(objeto);
+  const checkboxes = document.querySelectorAll('input[class = "subject"]:checked');
+  for (let i = 0; i < checkboxes.length; i += 1) { array.push(checkboxes[i].value); }
+  const objeto = [{ question: 'Nome:', answer: `${name.value} ${lastname.value}` },
+    { question: 'Email:', answer: `${email.value}` },
+    { question: 'Casa:', answer: `${house.value}` },
+    { question: 'Família:', answer: `${radio.value}` },
+    { question: 'Matérias:', answer: `${array}` },
+    { question: 'Avaliação:', answer: `${avaliacao.value}` },
+    { question: 'Observações:', answer: `${textareaF.value}` }]; renderFormData(objeto);
 }
-
-
 
 checkbox.addEventListener('click', disabledBtn);
 enviarBtn.addEventListener('click', enviar);
