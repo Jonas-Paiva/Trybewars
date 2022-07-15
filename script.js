@@ -37,7 +37,7 @@ function contador() {
 // function enviaData() {
 //   while (mainT.firstChild) {
 //     mainT.removeChild(mainT.firstChild);
-//   }
+//   .}
 // }
 
 function pegarInfo(e) {
