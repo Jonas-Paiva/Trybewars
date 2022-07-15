@@ -37,6 +37,9 @@ header {
 
 header h1 {
   color: aliceblue;
+  letter-spacing: 4px;
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
 
 header img {
@@ -158,4 +161,5 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 0;
 }
