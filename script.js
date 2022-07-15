@@ -69,7 +69,7 @@ function pegarInfo(e) {
   const textareaF = document.getElementById('textarea');
   const array = [];
   const checkboxes = document.querySelectorAll('input[class = "subject"]:checked');
-  for (let i = 0; i < checkboxes.length; i += 1) { array.push(checkboxes[i].value); }
+  for (let i = 0; i < checkboxes.length; i += 1) { array.push(` ${checkboxes[i].value}`); }
   const objeto = [{ question: 'Nome:', answer: `${name.value} ${lastname.value}` },
     { question: 'Email:', answer: `${email.value}` },
     { question: 'Casa:', answer: `${house.value}` },
