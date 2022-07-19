@@ -33,12 +33,6 @@ function contador() {
   counterBtn.innerText = tamanhoC;
 }
 
-// function enviaData() {
-//   while (mainT.firstChild) {
-//     mainT.removeChild(mainT.firstChild);
-//   }
-// }
-
 function createListElement(question, answer) {
   const liElement = document.createElement('li');
   liElement.innerHTML = `
